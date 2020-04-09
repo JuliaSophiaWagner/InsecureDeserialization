@@ -73,7 +73,7 @@ var Server = /** @class */ (function () {
                 res.status(403).json({ reason: 'Wrong credentials.' });
             }
         });
-        this.app.listen(3000, function () { return console.log('started at port 3000/'); });
+        this.app.listen(4000, function () { return console.log('started at port 3000/'); });
     }
     Server.prototype.logMiddleware = function (req, res, next) {
         console.log('webserver: ' + req.url);
